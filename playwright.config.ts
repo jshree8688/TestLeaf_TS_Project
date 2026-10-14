@@ -33,7 +33,7 @@ export default defineConfig({
     trace: 'on',
   screenshot: 'on',
   video: 'on',
-
+ testIdAttribute: 'data-test-id',
   },
 
   /* Configure projects for major browsers */
@@ -41,6 +41,8 @@ export default defineConfig({
     {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'], channel: 'msedge' },
+     
+
     },
 
     /*{
